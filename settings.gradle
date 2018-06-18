@@ -6,9 +6,8 @@
  * Detailed information about configuring a multi-project build in Gradle can be found
  * in the user guide at https://docs.gradle.org/4.6/userguide/multi_project_builds.html
  */
-
+apply from: 'gradle-playground-main/settings.gradle'
 rootProject.name = 'gradle-playground'
 
-include 'gradle-playground'
 include 'gradle-playground-main:gradle-playground-main-a'
 include 'gradle-playground-main:gradle-playground-main-b'
