@@ -18,3 +18,7 @@
 [submodule "eryk-web-server-model"]
 	path = eryk-web-server-model
 	url = git@github.com:dagi12/eryk-web-server-model.git
+
+[submodule "zamowienia-server"]
+	path = zamowienia-server
+	url = git@bitbucket.org:softra/zamowienia-server.git

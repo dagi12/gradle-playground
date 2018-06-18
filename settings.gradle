@@ -16,6 +16,8 @@ include 'flota-web-server-model'
 include 'flota-web-server-common'
 include 'flota-web-server-email'
 
+include 'zamowienia-server:flota-web-server-client'
+
 //include 'gradle-playground-main'
 //include 'gradle-playground-main/gradle-playground-main-a'
 //include ':gradle-playground-main-a'
