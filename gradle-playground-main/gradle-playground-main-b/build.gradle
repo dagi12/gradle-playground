@@ -1,5 +1,0 @@
-group = 'pl.edu.amu.wmi'
-
-dependencies {
-    compile project(':gradle-playground-main-a')
-}

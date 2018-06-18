@@ -1,9 +1,60 @@
+
+buildscript {
+    ext {
+        // always check logs are rolling and http json output error handling on update
+        springBootVersion = '2.0.0.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+        classpath "gradle.plugin.at.comm_unity.gradle.plugins:jpamodelgen-plugin:1.1.4"
+        classpath 'com.bmuschko:gradle-cargo-plugin:2.3'
+    }
+}
+
+ext {
+    mssqlVersion = "6.4.0.jre8"
+    // postgresql 9.1 and SqlServer 2008 support
+    flywayVersion = "4.2.0"
+    springBootVersion = project.springBootVersion
+    production = System.getProperty('env') == 'prod'
+    profiles = System.getProperty('profiles')
+    deploy = System.getProperty('deploy') == ''
+}
+
 subprojects {
+    apply plugin: "at.comm_unity.gradle.plugins.jpamodelgen"
     apply plugin: 'java'
     apply plugin: 'idea'
+    apply plugin: "io.spring.dependency-management"
 
     repositories {
+        mavenCentral()
         jcenter()
+    }
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    compileJava.options.encoding = 'UTF-8'
+
+    dependencies {
+        testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+    }
+
+    dependencyManagement {
+        imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+    }
+
+    jpaModelgen {
+        library = 'org.hibernate:hibernate-jpamodelgen:5.2.15.Final'
+        jpaModelgenSourcesDir = "build/jpaModelgen"
     }
 
 }

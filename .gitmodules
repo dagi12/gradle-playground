@@ -1,0 +1,20 @@
+
+[submodule "flota-web-server-common"]
+	path = flota-web-server-common
+	url = git@bitbucket.org:softra/flota-web-server-common.git
+
+[submodule "flota-web-server-email"]
+	path = flota-web-server-email
+	url = git@bitbucket.org:softra/flota-web-server-email.git
+
+[submodule "flota-web-server-model"]
+	path = flota-web-server-model
+	url = git@bitbucket.org:softra/flota-web-server-model.git
+
+[submodule "eryk-web-server-common"]
+	path = eryk-web-server-common
+	url = git@github.com:dagi12/eryk-web-server-common.git
+
+[submodule "eryk-web-server-model"]
+	path = eryk-web-server-model
+	url = git@github.com:dagi12/eryk-web-server-model.git

@@ -10,7 +10,13 @@ rootProject.name = 'gradle-playground'
 
 //apply from: 'gradle-playground-main/settings.gradle'
 
+include 'eryk-web-server-model'
+include 'eryk-web-server-common'
+include 'flota-web-server-model'
+include 'flota-web-server-common'
+include 'flota-web-server-email'
+
 //include 'gradle-playground-main'
 //include 'gradle-playground-main/gradle-playground-main-a'
-include ':gradle-playground-main-a'
-include ':gradle-playground-main:gradle-playground-main-b'
+//include ':gradle-playground-main-a'
+//include ':gradle-playground-main:gradle-playground-main-b'

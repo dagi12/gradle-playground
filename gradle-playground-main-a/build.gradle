@@ -1,5 +1,0 @@
-group = 'pl.edu.amu.wmi'
-
-dependencies {
-    compile "com.google.guava:guava:23.0"
-}
