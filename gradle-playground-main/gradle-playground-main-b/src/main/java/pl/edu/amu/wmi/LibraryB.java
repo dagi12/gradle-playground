@@ -11,6 +11,7 @@ public class LibraryB {
     public boolean someLibraryMethod() {
         CacheBuilder.newBuilder();
         new LibraryA();
+        new LibraryC();
         return true;
     }
 }
