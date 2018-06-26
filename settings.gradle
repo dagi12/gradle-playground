@@ -8,13 +8,10 @@
  */
 rootProject.name = 'gradle-playground'
 
-//apply from: 'gradle-playground-main/settings.gradle'
-
-//include 'gradle-playground-main'
-//include 'gradle-playground-main/gradle-playground-main-a'
-include ':gradle-playground-main-a'
+include 'gradle-playground-main'
+include 'gradle-playground-main-a'
 
 include ':gradle-playground-main:gradle-playground-main-b'
+include ':gradle-playground-main:gradle-playground-main-c'
 
-include ':gradle-playground-main-c'
-project(':gradle-playground-main-c').projectDir = new File(settingsDir, './gradle-playground-main/gradle-playground-main-c')
+//project(':gradle-playground-main-c').projectDir = new File(settingsDir, './gradle-playground-main/gradle-playground-main-c')
