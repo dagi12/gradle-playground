@@ -1,0 +1,7 @@
+apply plugin: "java-library"
+
+group = "pl"
+
+dependencies {
+    implementation project(":gradle-playground-main-a")
+}

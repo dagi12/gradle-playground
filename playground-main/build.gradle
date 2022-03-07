@@ -1,6 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'pl'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
 //subprojects {
 //    configurations.all {
 //        resolutionStrategy.dependencySubstitution {
+//            substitute project(":lib") with project(":playground-main:lib")
 //            substitute project(":gradle-playground-main-b") with project(":playground-libs:gradle-playground-main-b")
 //            substitute project(":gradle-playground-main-a") with project(":playground-libs:gradle-playground-main-a")
 //        }

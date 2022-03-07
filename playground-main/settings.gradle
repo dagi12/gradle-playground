@@ -1,0 +1,4 @@
+rootProject.name = 'playground-main'
+
+include ":lib"
+include ":core"

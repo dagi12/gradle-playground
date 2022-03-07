@@ -1,0 +1,4 @@
+rootProject.name = 'playground-libs'
+
+include ":gradle-playground-main-a"
+include ":gradle-playground-main-b"

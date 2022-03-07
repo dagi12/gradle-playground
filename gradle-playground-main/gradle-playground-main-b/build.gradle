@@ -1,6 +1,0 @@
-group = 'pl.edu.amu.wmi'
-
-dependencies {
-    compile project(':gradle-playground-main-a')
-    compile project(':gradle-playground-main:gradle-playground-main-c')
-}
